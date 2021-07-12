@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#CAE4DB">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/make_eat_small"
+            android:paddingVertical="8dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#F0FFFF"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="나의 냉장고"
+            android:textStyle="bold"
+            android:fontFamily="@font/jua_ttf"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingVertical="5dp">
+        </TextView>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/Hscrollview"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/tomato_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tomato"
+                android:layout_marginRight="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/gochu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gochu"
+                android:layout_marginRight="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/sogogi_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sogogi"
+                android:layout_marginRight="20dp">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/pig_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pig"
+                android:layout_marginRight="20dp">
+
+            </Button>
+            <Button
+                android:id="@+id/bachu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bachu"
+                android:layout_marginRight="20dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

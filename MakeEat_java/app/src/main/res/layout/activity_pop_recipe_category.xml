@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pop_recipe.Pop_recipe_category_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#CAE4DB">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/make_eat_small"
+            android:paddingVertical="8dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#F0FFFF"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="인기 레시피 추천"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/jua_ttf"
+            android:paddingVertical="5dp">
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/water_1330252_1920">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/hungry_shark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/happy_shark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/taste_recipe_button1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/icons8_mainfood"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="메인 음식"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button1"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button1"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button1" />
+
+            <Button
+                android:id="@+id/taste_recipe_button2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/icons8_sidefood"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toStartOf="@+id/taste_recipe_button3"
+                app:layout_constraintStart_toEndOf="@+id/taste_recipe_button1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="밑반찬"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button2"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button2" />
+
+            <Button
+                android:id="@+id/taste_recipe_button3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/icons8_foreignfood"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="양식"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button3"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button3" />
+
+            <Button
+                android:id="@+id/taste_recipe_button4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_fusionfood"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button1"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button1"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button1" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="퓨전 음식"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button4"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button4"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button4" />
+
+            <Button
+                android:id="@+id/taste_recipe_button5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_gooktang"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button2"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button2"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button2" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="국&#38;탕"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button5"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button5"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button5" />
+
+            <Button
+                android:id="@+id/taste_recipe_button6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_gook"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button3"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button3"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button3" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="찌개"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button6"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button6" />
+
+            <Button
+                android:id="@+id/taste_recipe_button7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_noodles"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button4"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button4"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="면 요리"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button7"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button7"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button7" />
+
+            <Button
+                android:id="@+id/taste_recipe_button8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_kimchijang"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button5"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button5"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="김치&#38;장"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button8"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button8"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button8" />
+
+            <Button
+                android:id="@+id/taste_recipe_button9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_salad"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button6"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button6" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="샐러드"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button9"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button9"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button9" />
+
+            <Button
+                android:id="@+id/taste_recipe_button10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_ricezukduk"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button7"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button7"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button7" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="밥&#38;죽&#38;떡"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button10"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button10"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button10" />
+
+            <Button
+                android:id="@+id/taste_recipe_button11"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_bread"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button8"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button8"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button8" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="빵"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button11"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button11"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button11" />
+
+            <Button
+                android:id="@+id/taste_recipe_button12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_soup"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button9"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button9"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button9" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="스프"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button12"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button12"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button12" />
+
+            <Button
+                android:id="@+id/taste_recipe_button13"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_dessert"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button10"
+                app:layout_constraintHorizontal_bias="0.794"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button10"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="후식"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button13"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button13"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button13" />
+
+            <Button
+                android:id="@+id/taste_recipe_button14"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_cookie"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button11"
+                app:layout_constraintHorizontal_bias="0.871"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button11"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button11" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="과자"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button14"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button14" />
+
+            <Button
+                android:id="@+id/taste_recipe_button15"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_drink"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button12"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button12"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button12" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="음료"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button15"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button15"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button15" />
+
+            <Button
+                android:id="@+id/taste_recipe_button16"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_sauce"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button13"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button13"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button13" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="소스"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button16"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button16"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button16" />
+
+            <Button
+                android:id="@+id/taste_recipe_button17"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icons8_etc"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button14"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button14"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button14" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/jua_ttf"
+                app:layout_constraintEnd_toEndOf="@+id/taste_recipe_button17"
+                app:layout_constraintStart_toStartOf="@+id/taste_recipe_button17"
+                app:layout_constraintTop_toBottomOf="@+id/taste_recipe_button17" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

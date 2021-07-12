@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="#FAFAD2"
+    app:cardElevation="8dp"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/taste_recipe_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:background="@drawable/outline">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/recipe_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua_ttf"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua_ttf"
+                android:text=" 위"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="30dp"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua_ttf"
+                android:text="recipe_name"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_timer_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/jua_ttf"
+                    android:textStyle="bold"
+                    android:text="조리 시간: "
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/recipe_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua_ttf"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:text="recipe_time"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_face_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua_ttf"
+                    android:layout_marginTop="5dp"
+                    android:text="작성자: "
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/recipe_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua_ttf"
+                    android:layout_marginTop="5dp"
+                    android:text="recipe_writer"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24"/>
+                <TextView
+                    android:id="@+id/recipe_viewer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua_ttf"
+                    android:text="recipe_viewer"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

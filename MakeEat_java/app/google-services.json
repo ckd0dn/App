@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678447615133",
+    "project_id": "makeeat-9d339",
+    "storage_bucket": "makeeat-9d339.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678447615133:android:cea3e3185826df3ec61874",
+        "android_client_info": {
+          "package_name": "com.gomsinpark.makeeat_java"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678447615133-cis4tfoh81v44f3ld26v1fhoehu6cnmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIVTTXY1s-IsTsL2g3bL4sQzqva1fZ1iQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678447615133-cis4tfoh81v44f3ld26v1fhoehu6cnmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

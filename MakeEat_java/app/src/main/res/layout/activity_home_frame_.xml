@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFrame_Activity"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="#CAE4DB">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/make_eat_small"
+                android:paddingVertical="8dp">
+            </ImageView>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_2879215_1920">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="로그아웃"
+                android:fontFamily="@font/jua_ttf"
+                android:foreground="?selectableItemBackgroundBorderless">
+
+            </Button>
+
+        </FrameLayout>
+
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navi"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            android:background="#f0ffff"
+            app:itemTextAppearance="@font/font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu"
+            android:theme="@style/NaviTheme"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gomsinpark.makeeat_java">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Pop_recipe.Pop_recipe_category_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe_next_Activity" />
+        <activity android:name=".ModelActivity" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PasswordReset_Activity" />
+        <activity android:name=".Sign_up_Activity" />
+        <activity android:name=".HomeFrame_Activity">
+
+        </activity>
+        <activity android:name=".Tas_recipe_Activity" /> <!-- <activity android:name=".Star_Activity" /> -->
+        <activity android:name=".Refrigerator_Activity" /> <!-- activity android:name=".Person_Activity" /> -->
+        <activity android:name=".Main_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe1_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe2_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe3_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe4_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe5_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe6_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe7_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe8_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe9_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe10_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe11_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe12_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe13_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe14_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe15_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe16_Activity" />
+        <activity android:name=".Pop_recipe.Pop_recipe17_Activity" />
+
+        <activity android:name=".Login_Activity" />
+    </application>
+
+</manifest>

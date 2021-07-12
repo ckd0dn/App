@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pop_recipe.Pop_recipe_next_Activity"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <ScrollView
+        android:id="@+id/sc1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/taste_recipe_next_itemback"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/next_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="30dp"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/next_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:textStyle="bold"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/next_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jua_ttf"
+                        android:textStyle="bold"
+                        android:textColor="#999999"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/star_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_sharp_star_border_24">
+                    </ImageButton>
+
+                    <!--
+                    <TextView
+                        android:id="@+id/next_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/jua_ttf"
+                        android:text=""
+                        android:textColor="#0067A3"
+                        android:textSize="20dp">
+
+                    </TextView> -->
+
+                </LinearLayout>
+
+                <!--
+                <kr.co.prnd.readmore.ReadMoreTextView
+                    android:id="@+id/next_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/jua_ttf"
+                    app:readMoreMaxLine="3"
+                    app:readMoreText="...더보기">
+
+                </kr.co.prnd.readmore.ReadMoreTextView> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/outlinerectangle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/cook1">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua_ttf"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="2dp"
+                            android:text="재료: "
+                            android:textSize="20sp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/next_material"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua_ttf"
+                            android:textSize="20sp"
+                            android:layout_marginTop="4dp"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/cook2">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua_ttf"
+                            android:text="요리 난이도: "
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center_vertical"></TextView>
+
+                        <TextView
+                            android:id="@+id/next_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/jua_ttf"
+                            android:textSize="20sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/cook3">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/next_servings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua_ttf"
+                            android:text="인분"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="&#60;TIP&#62;"
+                    android:fontFamily="@font/jua_ttf"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="20dp">
+                </TextView>
+
+                <kr.co.prnd.readmore.ReadMoreTextView
+                    android:id="@+id/next_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/jua_ttf"
+                    app:readMoreMaxLine="2"
+                    app:readMoreText="...더보기" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="&#60;요리 순서&#62;"
+                    android:fontFamily="@font/jua_ttf"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/next_cook_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua_ttf"
+                    android:textSize="20sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
